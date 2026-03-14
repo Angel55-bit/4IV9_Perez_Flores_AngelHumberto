@@ -17,7 +17,7 @@ Vamos a realizar 14 programas dentro de un menu gigante para poner a prueba sus 
 
 import java.util.Scanner;
 
-class EstructuraDatos{
+class EstructuraDatos{ 
     public static void main(String[] args) {
        
         //aqui van las variables
@@ -28,11 +28,11 @@ class EstructuraDatos{
 
         //aqui va el menu
         do {
-        System.out.println("1.-");
+        System.out.println("1.- Calcular descuento por edad");
         System.out.println("2.- Convertir a numeros binarios");
-        System.out.println("3.-");
-        System.out.println("4.-");
-        System.out.println("5.-");
+        System.out.println("3.- Conversion de temperaturas");
+        System.out.println("4.- Contar numeros negativos y positivos");
+        System.out.println("5.- Tiendita");
         System.out.println("6.-");
         System.out.println("7.-");
         System.out.println("8.-");
@@ -50,6 +50,29 @@ class EstructuraDatos{
         switch (opcion){
 
             case 1:
+                int edad;
+                double precio, descuento = 0, total;
+
+                System.out.println("Ingresa tu edad:");
+                edad = entrada.nextInt();
+
+                System.out.println("Ingresa el precio del producto:");
+                precio = entrada.nextDouble();
+
+                if(edad >= 60){
+                    descuento = precio * 0.30;
+                }
+                else if(edad >= 18){
+                    descuento = precio * 0.10;
+                }
+                else{
+                    descuento = precio * 0.05;
+                }
+
+                total = precio - descuento;
+
+                System.out.println("Descuento: " + descuento);
+                System.out.println("Total a pagar: " + total);
                 break;
             case 2:
                 //convertir un numero decimal a binario
@@ -83,7 +106,7 @@ class EstructuraDatos{
             case 5:
                 System.out.println("Bienvenido a esta hermosa tiendita linda y kawaii");
                 System.out.println("Por favor ingrese cuantos elementos va a comprar");
-                int elementosproductos = 0
+                int elementosproductos = 0;
                 elementosproductos = entrada.nextInt();
                 if(elementosproductos > 0){
                     for(int i = 1; i<=
@@ -129,11 +152,11 @@ class EstructuraDatos{
                 break;
             default:
                 break;
-        }
-System.out.println("Deseas repetir el programa escribe s o S para si");
-letrarepetir = entrada.next().charAt
-(0);
-    }while (letrarepetir == 's' || letrarepetir == 'S');
+            }
+            System.out.println("Deseas repetir el programa escribe s o S para si");
+            letrarepetir = entrada.next().charAt
+            (0);
+        }while (letrarepetir == 's' || letrarepetir == 'S');
    
     }
 }
