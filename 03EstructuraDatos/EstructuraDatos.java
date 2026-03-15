@@ -73,6 +73,7 @@ class EstructuraDatos{
 
                 System.out.println("Descuento: " + descuento);
                 System.out.println("Total a pagar: " + total);
+
                 break;
             case 2:
                 //convertir un numero decimal a binario
@@ -100,6 +101,16 @@ class EstructuraDatos{
                 System.out.println("El numero convertido a binario es: "  + guardarbinario);
                 break;
             case 3:
+                double celsius, fahrenheit, kelvin;
+
+                System.out.println("Ingresa la temperatura en Celsius:");
+                celsius = entrada.nextDouble();
+
+                fahrenheit = (celsius * 9/5) + 32;
+                kelvin = celsius + 273.15;
+
+                System.out.println("Fahrenheit: " + fahrenheit);
+                System.out.println("Kelvin: " + kelvin);
                 break;
             case 4:
                 break;
