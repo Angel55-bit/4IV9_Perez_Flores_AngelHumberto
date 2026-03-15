@@ -34,7 +34,7 @@ class EstructuraDatos{
         System.out.println("3.- Conversion de temperaturas");
         System.out.println("4.- Contar numeros negativos y positivos");
         System.out.println("5.- Tiendita");
-        System.out.println("6.-");
+        System.out.println("6.-Calculador de areas y perimetros de figuras");
         System.out.println("7.-");
         System.out.println("8.-");
         System.out.println("9.-");
