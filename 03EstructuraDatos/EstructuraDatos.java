@@ -113,13 +113,34 @@ class EstructuraDatos{
                 System.out.println("Kelvin: " + kelvin);
                 break;
             case 4:
-                break;
+                int cantidad, numero;
+                int positivos = 0;
+                int negativos = 0;
+
+                System.out.println("¿Cuantos numeros deseas ingresar?");
+                cantidad = entrada.nextInt();
+
+                for (int i = 1; i <= cantidad; i++){
+                    System.out.println("Ingresa el numero " + i);
+                    numero = entrada.nextInt();
+
+                    if(numero > 0){
+                        positivos++;
+                    }
+                    else if(numero < 0){
+                    negativos++;
+                    }
+                }
+                System.out.println("Cantidad de positivos: " + positivos);
+                System.out.println("Cantidad de negativos: " + negativos);
+
+                break; 
             case 5:
                 System.out.println("Bienvenido a esta hermosa tiendita linda y kawaii");
                 System.out.println("Por favor ingrese cuantos elementos va a comprar");
 
                 int elementosproductos;
-                float compra;
+                float compra = 0;
 
                 System.out.println("¿Qué va a llevar?");
                 elementosproductos = entrada.nextInt();
@@ -136,45 +157,45 @@ class EstructuraDatos{
                             System.out.println("Ingresa la cantidad de producto");
                             int cantidadProducto = entrada.nextInt();
 
-                            float resultado= precioProducto + cantidadProducto;
+                            float resultado= precioProducto * cantidadProducto;
 
                             compra = compra + resultado;
 
                         }
                         System.out.println("El total de la compra es: " + compra);
                 
-                }else{
-                    System.out.println("Ingrese solo cantidades positivos");
-                    }
-                break;
-            case 6:
-                break;
-            case 7:
-                break;
-            case 8:
-                break;
-            case 9:
-                break;
-            case 10:
-                break;
-            case 11:
-                break;
-            case 12:
-                break;
-            case 13:
-                break;
-            case 14:
-                    System.out.println("Gracias por usar el programa");
-                    letrarepetir = 'n';
-                break;
-            default:
-                break;
-            }
-            System.out.println("Deseas repetir el programa escribe s o S para si");
-            letrarepetir = entrada.next().charAt
-            (0);
+                }   else   {
+                        System.out.println("Ingrese solo cantidades positivos");
+                        }
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
+                case 11:
+                    break;
+                case 12:
+                    break;
+                case 13:
+                    break;
+                case 14:
+                        System.out.println("Gracias por usar el programa");
+                        letrarepetir = 'n';
+                    break;
+                default:
+                    break;
+                }
+                System.out.println("Deseas repetir el programa escribe s o S para si");
+                letrarepetir = entrada.next().charAt
+                (0);
 
-        }while (letrarepetir == 's' || letrarepetir == 'S');
+            }while (letrarepetir == 's' || letrarepetir == 'S');
 
+        }
     }
-}
