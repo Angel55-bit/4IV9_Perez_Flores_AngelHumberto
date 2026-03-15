@@ -170,6 +170,48 @@ class EstructuraDatos{
                         }
                     break;
                 case 6:
+                    int figura;
+
+                    System.out.println("Selecciona una figura");
+                    System.out.println("1.-Circulo");
+                    System.out.println("2.-Triangulo");
+                    System.out.println("3.-Cuadrado");
+                    System.out.println("4.-Rectangulo");
+                    System.out.println("5.-Pentagono");
+
+                    figura = entrada.nextInt(); 
+
+                    switch (figura) {
+                        case 1:
+                            double radio;
+
+                            System.out.println("Ingresa el radio");
+                            radio = entrada.nextDouble(); 
+
+                            System.out.println("Area: "+ (Math.PI * radio * radio));
+                            System.out.println("Perimetro: " + (2 * Math.PI * radio));
+
+                            break;
+                        case 2:
+                            double b, h; 
+                            System.out.println("Ingresa la base:");
+                            b = entrada.nextDouble();
+
+                            System.out.println("Ingresa la altura:");
+                            h = entrada.nextDouble();
+
+                            System.out.println("Area: "+ b ((b * h)/2));
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                    
+                        default:
+                            break;
+                    }
                     break;
                 case 7:
                     break;
