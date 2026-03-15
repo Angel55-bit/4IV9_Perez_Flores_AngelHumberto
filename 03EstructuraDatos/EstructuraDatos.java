@@ -160,6 +160,8 @@ class EstructuraDatos{
             case 13:
                 break;
             case 14:
+                    System.out.println("Gracias por usar el programa");
+                    letrarepetir = 'n';
                 break;
             default:
                 break;
@@ -167,7 +169,8 @@ class EstructuraDatos{
             System.out.println("Deseas repetir el programa escribe s o S para si");
             letrarepetir = entrada.next().charAt
             (0);
+
         }while (letrarepetir == 's' || letrarepetir == 'S');
-   
+
     }
 }
