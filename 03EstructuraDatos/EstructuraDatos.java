@@ -200,7 +200,7 @@ class EstructuraDatos{
                             h = entrada.nextDouble();
 
                             System.out.println("Area: "+ ((b * h)/2));
-                            
+
                             break;
                         case 3:
                             double lado;
@@ -224,10 +224,16 @@ class EstructuraDatos{
 
                             break;
                         case 5:
+                            double LadoPentagono;
+                            System.out.println("Ingresa el lado: ");
+                            LadoPentagono = entrada.nextDouble();
+
+                            System.out.println("Perimetro: "+ (5 * LadoPentagono));
+
                             break;
                     
                         default:
-                            break;
+                            System.out.println("Figura no valida");
                     }
                     break;
                 case 7:
