@@ -28,6 +28,7 @@ class EstructuraDatos{
 
         //aqui va el menu
         do {
+        System.out.println("¿Que quieres hacer?");
         System.out.println("1.- Calcular descuento por edad");
         System.out.println("2.- Convertir a numeros binarios");
         System.out.println("3.- Conversion de temperaturas");
