@@ -184,7 +184,6 @@ class EstructuraDatos{
                     switch (figura) {
                         case 1:
                             double radio;
-
                             System.out.println("Ingresa el radio");
                             radio = entrada.nextDouble(); 
 
@@ -200,11 +199,29 @@ class EstructuraDatos{
                             System.out.println("Ingresa la altura:");
                             h = entrada.nextDouble();
 
-                            System.out.println("Area: "+ b ((b * h)/2));
+                            System.out.println("Area: "+ ((b * h)/2));
+                            
                             break;
                         case 3:
+                            double lado;
+                            System.out.println("Ingresa el lado:");
+                            lado = entrada.nextDouble(); 
+
+                            System.out.println("Area: " + (lado * lado));
+                            System.out.println("Perimetro: "+ (4 * lado));
+
                             break;
                         case 4:
+                            double base, altura; 
+                            System.out.println("Ingresa la base: ");
+                            base = entrada.nextDouble();
+
+                            System.out.println("Ingresa la altura: ");
+                            altura = entrada.nextDouble();
+
+                            System.out.println("Area: "+ (base * altura));
+                            System.out.println("Perimetro: "+ (2*(base + altura)));
+
                             break;
                         case 5:
                             break;
