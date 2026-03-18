@@ -6,11 +6,11 @@ Vamos a realizar 14 programas dentro de un menu gigante para poner a prueba sus 
 4.- Realizar un programa para contar numero de positivos y negativos de una serie de numeros
 5.- Desarrollar una tienda para agregar productos y precios
 6.- Desarrollar un programa para calcular el area y perimetro de 5 diferentes figuras
-7.- Desarrollar una tabla
+7.- Desarrollar una tabla ahorita a ver que se me ocurre
 8.- Desarrollar un programa para calcular el factorial con recursividad
-9.- Vamos a hacer dibujitos wiii
-10.- Desarrollar una figura hueca
-11.- Realizar algunos patrones
+9.- Vamos a hacer dibujitos wiii (Triangulo equilatero o rombo)
+10.- Desarrollar una figura hueca lo mismo que el 9 solo que sin relleno
+11.- Realizar algunos patrones  //ya no 
 12.- Realizar un diamante
 13.- Desarrollar una calculadora basica + - * /
 */
@@ -34,10 +34,10 @@ class EstructuraDatos{
         System.out.println("3.- Conversion de temperaturas");
         System.out.println("4.- Contar numeros negativos y positivos");
         System.out.println("5.- Tiendita");
-        System.out.println("6.-Calculador de areas y perimetros de figuras");
-        System.out.println("7.-");
+        System.out.println("6.- Calculador de areas y perimetros de figuras");
+        System.out.println("7.- Tabla de a ver que se le ocurre al profe");
         System.out.println("8.-");
-        System.out.println("9.-");
+        System.out.println("9.- Realizar cubo magica");
         System.out.println("10.-");
         System.out.println("11.-");
         System.out.println("12.-");
@@ -237,10 +237,33 @@ class EstructuraDatos{
                     }
                     break;
                 case 7:
+                    //Quiero dejarles una tabla de multiplicar
+                    //Deberan darle formato y titulos a cada columna
+                    for(int n = 1; n <= 10; n++){
+                        System.out.println(" |  "+ n + " |   " +(n*10 + " |   " + (n*100) + " |   " + (n*1000) ));
+                    }
                     break;
                 case 8:
                     break;
                 case 9:
+                    //Vamos a realizar un cuadrado magico
+                    System.out.println("Vamos a realizar el dibujo de un cuadrado magico");
+                    System.out.println("Ingrese el tamaño del cuadrado");
+                    int n1 = entrada.nextInt();
+                    
+                    if ( n1 >= 1 && n1 <= 20){
+                        //Se imprime
+                        for (int i = 1; i <= n1; i++){
+                            //Recorro las columnas
+                            for (int j = 1; j <= n1; j++){
+                                System.out.print(" * ");
+                            }
+                            System.out.println(" * ");
+                        }
+                    }else{
+                        System.out.println("Por favor solo ingrese valores entre el 1 y el 20");
+
+                    }
                     break;
                 case 10:
                     break;
