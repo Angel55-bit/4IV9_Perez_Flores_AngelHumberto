@@ -244,6 +244,9 @@ class EstructuraDatos{
                     }
                     break;
                 case 8:
+                    System.out.println("Numero factorial:");
+                    int nf = entrada.nextInt();
+                    if (nf >= 0) System.out.println("Factorial: " + factorial(nf));
                     break;
                 case 9:
                     //Vamos a realizar un cuadrado magico
