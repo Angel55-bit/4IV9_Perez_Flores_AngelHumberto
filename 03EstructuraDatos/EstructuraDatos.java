@@ -299,6 +299,20 @@ class EstructuraDatos{
                     }
                     break;
                 case 13:
+                    System.out.println("--- CALCULADORA ---");
+                    System.out.print("Primer numero: "); double n1 = entrada.nextDouble();
+                    System.out.print("Segundo numero: "); double n2 = entrada.nextDouble();
+                    System.out.println("Operacion: 1.Suma 2.Resta 3.Multiplicacion 4.Division");
+                    int opcCalc = entrada.nextInt();
+                    switch(opcCalc) {
+                        case 1: System.out.println("Resultado: " + (n1 + n2)); break;
+                        case 2: System.out.println("Resultado: " + (n1 - n2)); break;
+                        case 3: System.out.println("Resultado: " + (n1 * n2)); break;
+                        case 4: 
+                            if(n2 != 0) System.out.println("Resultado: " + (n1 / n2));
+                            else System.out.println("Error: Division por cero.");
+                            break;
+                    }
                     break;
                 case 14:
                         System.out.println("Gracias por usar el programa");
