@@ -269,10 +269,34 @@ class EstructuraDatos{
                     }
                     break;
                 case 10:
+                    System.out.print("Vamos a realizara el dibujo de un cuadrado sin relleno ");
+                    System.out.println("Ingrese el tamaño del cuadrado:");
+                    int th = entrada.nextInt();
+                    for (int i = 1; i <= th; i++) {
+                        for (int j = 1; j <= th; j++) {
+                            if (i == 1 || i == th || j == 1 || j == th) System.out.print("* ");
+                            else System.out.print("  ");
+                        }
+                        System.out.println();
+                    }
                     break;
                 case 11:
+                    //Murio
+                    System.out.println("Hola profe, esta opcion murio :(");
                     break;
                 case 12:
+                    System.out.print("Filas (mitad): ");
+                    int f = entrada.nextInt();
+                    for (int i = 1; i <= f; i++) {
+                        for (int j = i; j < f; j++) System.out.print(" ");
+                        for (int k = 1; k <= (2 * i - 1); k++) System.out.print("*");
+                        System.out.println();
+                    }
+                    for (int i = f - 1; i >= 1; i--) {
+                        for (int j = f; j > i; j--) System.out.print(" ");
+                        for (int k = 1; k <= (2 * i - 1); k++) System.out.print("*");
+                        System.out.println();
+                    }
                     break;
                 case 13:
                     break;
