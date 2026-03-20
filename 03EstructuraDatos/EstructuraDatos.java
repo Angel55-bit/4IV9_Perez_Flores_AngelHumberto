@@ -7,7 +7,7 @@ Vamos a realizar 14 programas dentro de un menu gigante para poner a prueba sus 
 5.- Desarrollar una tienda para agregar productos y precios
 6.- Desarrollar un programa para calcular el area y perimetro de 5 diferentes figuras
 7.- Desarrollar una tabla ahorita a ver que se me ocurre
-8.- Desarrollar un programa para calcular el factorial con recursividad
+8.- Desarrollar un programa para calcular el factorial 
 9.- Vamos a hacer dibujitos wiii (Triangulo equilatero o rombo)
 10.- Desarrollar una figura hueca lo mismo que el 9 solo que sin relleno
 11.- Realizar algunos patrones  //ya no 
@@ -36,12 +36,12 @@ class EstructuraDatos{
         System.out.println("5.- Tiendita");
         System.out.println("6.- Calculador de areas y perimetros de figuras");
         System.out.println("7.- Tabla de a ver que se le ocurre al profe");
-        System.out.println("8.-");
+        System.out.println("8.- Calcular el factorial");
         System.out.println("9.- Realizar cubo magica");
-        System.out.println("10.-");
-        System.out.println("11.-");
-        System.out.println("12.-");
-        System.out.println("13.-");
+        System.out.println("10.- Desarrollar figura hueca");
+        System.out.println("11.- Murio");
+        System.out.println("12.- Diamantito");
+        System.out.println("13.- Calculadora");
         System.out.println("14.- Salir ");
 
         opcion = entrada.nextInt();
