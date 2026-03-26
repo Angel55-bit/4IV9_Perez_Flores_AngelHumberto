@@ -28,6 +28,32 @@ class Examen {
 
             switch (opcion) {
                 case 1:
+                    System.out.println("--- Registro de Cliente ---");
+                    System.out.print("Nombre: ");
+                    nombre = entrada.nextLine();
+                    System.out.print("Apellido Paterno: ");
+                    apellidoP = entrada.nextLine();
+                    System.out.print("Apellido Materno: ");
+                    apellidoM = entrada.nextLine();
+                    System.out.print("Fecha de Nacimiento: ");
+                    fechaNac = entrada.nextLine();
+                    System.out.print("Direccion Residencial: ");
+                    direccion = entrada.nextLine();
+                    System.out.println("Datos guardados correctamente.");
+                    break;
+
+                case 2: 
+                    System.out.println("--- Catalogo de Productos ---");
+                    System.out.println("a. Porcelanato: $" + precioPorcelanato + " el metro cuadrado");
+                    System.out.println("b. Marmoleado: $" + precioMarmoleado + " el metro cuadrado");
+                    System.out.println("c. Acrilico: $" + precioAcrilico + " el metro cuadrado");
+                    break;
+
+                case 3:
+
+                    break;
+
+                case 4:
                     
                     break;
             
