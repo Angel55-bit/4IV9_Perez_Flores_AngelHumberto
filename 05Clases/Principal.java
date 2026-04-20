@@ -50,10 +50,15 @@ class Figura {
         } while (opcion != 6);
     }
     public void calcularcirculo() {
-        System.out.println("Ingresa el radio:");
+        System.out.println("Ingresa la medida del radio:");
         radio = entrada.nextFloat();
         float area = (float) (Math.PI * radio * radio);
         System.out.println("El area del circulo es:"+area);
     }
-    
+    public void calcularcuadrado() {
+        System.out.println("Ingresa la medida del lado:");
+        lado = entrada.nextFloat();
+        float area = lado * lado;
+        System.out.println("El area del cuadrado es:"+area);
+    }
 }
