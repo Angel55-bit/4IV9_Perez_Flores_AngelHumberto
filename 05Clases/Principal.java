@@ -1,10 +1,54 @@
+import java.util.Scanner;
 //ya vimos el concepto de clase
 
 package 05Clases;
-class Principal {
+class Figura {
+    //Atributos
+    float radio, diametro, lado, altura, base;
 
-    //metodo principal
-    public static void main(String[] args) {
-        // un ejercicio de figuritas
+    Scanner entrada = new Scanner(System.in)
+
+    //Menu
+    public static menu() {
+        int opcion = 0;
+
+        do{
+            System.out.println("Menu de las figuritas");
+            System.out.println("1.- Calcular el circulo");
+            System.out.println("2.- Calcular el cuadrado");
+            System.out.println("3.- Calcular el triángulo");
+            System.out.println("4.- Calcular el rectángulo");
+            System.out.println("5.- Calcular el trapecio");
+            System.out.println("6.- Salir");
+
+            opcion = entrada.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    calcularcirculo();
+                    break;
+                case 2:
+                    calcularcuadrado();
+                    break;
+                case 3:
+                    calculartriángulo();
+                    break;
+                case 4:
+                    calcularrectángulo();
+                    break;
+                case 5:
+                    calculartrapecio();
+                    break;
+                case 6:
+                    System.out.println("Saliendo....");
+                    break;
+            
+            
+                default:
+                    System.out.println("Opcion invalida");
+                    break;
+            }
+        } while (opcion != 6);
     }
+    
 }
