@@ -76,4 +76,14 @@ class Figura {
         float area = base * altura;
         System.out.println("El area del rectángulo es:"+area);
     }
+    public void calculartrapecio() {
+        System.out.println("Ingresa la medida del la base mayor:");
+        basemayor = entrada.nextFloat();
+        System.out.println("Ingresa la medida de la base menor:");
+        basemenor = entrada.nextFloat();
+        System.out.println("Ingresa la medida de la altura:");
+        altura = entrada.nextFloat();
+        float area = ((basemayor * basemenor)* altura) / 2;
+        System.out.println("El area del trapecio es:"+area);
+    }
 }
