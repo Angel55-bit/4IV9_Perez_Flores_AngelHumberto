@@ -5,8 +5,11 @@ public class Ejercicios {
     //la calculadora debe de tener un menu
     Scanner entrada = new Scanner(System.in);
     public void menu(){
-        //las instrucciones
+        int opcion = 0;
 
+        do {
+
+        //las instrucciones
         System.out.println("Bienvenido a la calculadora");
         System.out.println("Elige la opcion deseada");
         System.out.println("1.-Sumar");
@@ -14,7 +17,6 @@ public class Ejercicios {
         System.out.println("3.-Multiplicar");
         System.out.println("4.-Salir");
 
-        int opcion = 0;
         opcion = entrada.nextInt();
 
         switch (opcion) {
@@ -25,15 +27,16 @@ public class Ejercicios {
                 resta();
                 break;
             case 3:
-                multiplicar();
+                multiplicación();
                 break;
-            case 4;
+            case 4:
                 System.out.println("Saliendo.....");
                 break;
             default:
                 System.out.println("Opcion invalida");
                 break;
-        }
+            }
+        }while (opcion != 4);
     }
     public void suma(){
         double num1 = 0.00, num2 = 0.00, resultado = 0.00;
@@ -63,5 +66,8 @@ public class Ejercicios {
             System.out.println("La multiplicación es: "+resultado);
     }
     public static void main(String[] args) {
+        
+        Ejercicios obj = new Ejercicios();
+        obj.menu();
     }
 }
