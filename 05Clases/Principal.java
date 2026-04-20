@@ -67,6 +67,13 @@ class Figura {
         System.out.println("Ingresa la medida del la altura:");
         altura = entrada.nextFloat();
         float area = (base * altura) / 2;
-        System.out.println("El area del triangulo es:"+area);
+        System.out.println("El area del triángulo es:"+area);
+    }
+    public void calcularrectángulo() {
+        System.out.println("Ingresa la medida de la base:");
+        lado = entrada.nextFloat();
+        System.out.println("Ingresa la medida de la altura:");
+        float area = base * altura;
+        System.out.println("El area del rectángulo es:"+area);
     }
 }
