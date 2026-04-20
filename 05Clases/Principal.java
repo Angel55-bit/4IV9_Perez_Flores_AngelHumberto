@@ -87,3 +87,9 @@ class Figura {
         System.out.println("El area del trapecio es:"+area);
     }
 }
+public class main {
+    public static void main(String[] args) {
+        Figura objFigura = new Figura();
+        objFigura.menu();
+    }
+}
