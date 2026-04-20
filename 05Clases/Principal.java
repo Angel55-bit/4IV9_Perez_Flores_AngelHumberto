@@ -61,4 +61,12 @@ class Figura {
         float area = lado * lado;
         System.out.println("El area del cuadrado es:"+area);
     }
+    public void calculartriángulo() {
+        System.out.println("Ingresa la medida del la base:");
+        base = entrada.nextFloat();
+        System.out.println("Ingresa la medida del la altura:");
+        altura = entrada.nextFloat();
+        float area = (base * altura) / 2;
+        System.out.println("El area del triangulo es:"+area);
+    }
 }
