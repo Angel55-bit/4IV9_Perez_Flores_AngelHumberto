@@ -43,12 +43,17 @@ class Figura {
                     System.out.println("Saliendo....");
                     break;
             
-            
                 default:
                     System.out.println("Opcion invalida");
                     break;
             }
         } while (opcion != 6);
+    }
+    public void calcularcirculo() {
+        System.out.println("Ingresa el radio:");
+        radio = entrada.nextFloat();
+        float area = (float) (Math.PI * radio * radio);
+        System.out.println("El area del circulo es:"+area);
     }
     
 }
