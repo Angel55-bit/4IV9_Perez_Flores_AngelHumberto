@@ -48,9 +48,15 @@ public class Principal {
                             System.out.println("Datos actualizados con exito");
                         }
                     }
+
                     break;
 
                 case 3:
+                    //Eliminar a un alumno
+                    System.out.print("Id del estudiante a eliminar: ");
+                    int idElim = entrada.nextInt();
+                    lista.removeIf(est -> est.getId() == idElim);
+                    System.out.println("Si existia, ha sido eliminado eres libre");
 
                     break;
 
