@@ -74,12 +74,23 @@ public class Principal {
                     break;
 
                 case 5:
+                    //Mostrar la lista completa de todos los exclavos
+                    System.out.println("-Lista de alumnos-");
+                    for (Estudiante e : lista){
+                        e.MostrarEstudiante();
+                        System.out.println("----------------");
+                    }
 
                     break;
+
+                case 6:
+                    System.out.println("Saliendo del programa");
             
-                default:
                     break;
+
+                default:
+                    System.out.println("Opcion invalida");
             }
-        }
+        }while (opcion != 6);            
     }
 }
