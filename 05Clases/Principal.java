@@ -6,7 +6,7 @@ class Figura {
     //Atributos
     float radio, diametro, lado, altura, base;
 
-    Scanner entrada = new Scanner(System.in)
+    Scanner entrada = new Scanner(System.in);
 
     //Menu
     public static menu() {
