@@ -61,6 +61,15 @@ public class Principal {
                     break;
 
                 case 4:
+                    //Buscar a un alumno
+                    System.out.print("Id que se va a buscar: ");
+                    int idBusq = entrada.nextInt();
+                    for (Estudiante e : lista){
+                        if (e.getId() == idBusq){
+                            System.out.println("Estudiante encontrado");
+                            e.MostrarEstudiante();
+                        }
+                    }
 
                     break;
 
