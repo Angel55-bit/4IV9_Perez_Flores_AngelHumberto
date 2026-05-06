@@ -19,6 +19,7 @@ public class Principal {
             opcion = entrada.nextInt();
 
             switch (opcion) {
+                //Registrar al alumno
                 case 1:
                     System.out.print("Ingresa Id: ");
                     int id = entrada.nextInt();
@@ -35,7 +36,18 @@ public class Principal {
                     break;
 
                 case 2:
-
+                    //Editar la informacion del alumno
+                    int idEdit = entrada.nextInt();
+                    for (Estudiante e : lista){
+                        if (e.getId() == idEdit){
+                            entrada.nextLine();
+                            System.out.print("Nuevo nombre: ");
+                            e.setNombre(entrada.nextLine());
+                            System.out.print("Nueva edad: ");
+                            e.setEdad(entrada.nextInt());
+                            System.out.println("Datos actualizados con exito");
+                        }
+                    }
                     break;
 
                 case 3:
