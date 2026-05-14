@@ -1,11 +1,14 @@
 public class Estudiante {
     private int id; 
-    private String nombre;
+    private double promedio;
+
+    public Estudiante(){
+    }
 
     //realizo el contructor
     public Estudiante(int id, String nombre, int edad, double promedio){
+        super(nombre, edad);
         this.id = id;
-        this.nombre = nombre;
         this.promedio = promedio;
     }
 
@@ -15,14 +18,6 @@ public class Estudiante {
 
     public void setId(int id){
         this.id = id;
-    }
-
-    public String getNombre(){
-        return nombre;
-    }
-
-    public void setNombre(String nombre){
-        this.nombre = nombre;
     }
      
     public double getPromedio(){

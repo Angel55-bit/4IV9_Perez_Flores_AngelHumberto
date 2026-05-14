@@ -76,7 +76,7 @@ public class Principal {
                 case 5:
                     //Mostrar la lista completa de todos los exclavos
                     System.out.println("-Lista de alumnos-");
-                    for (Estudiante e : lista){
+                    for (Estudiante e : listaEstudiantes){
                         e.mostrarEstudiante();
                         System.out.println("----------------");
                     }
