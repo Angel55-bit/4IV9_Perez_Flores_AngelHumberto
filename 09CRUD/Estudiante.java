@@ -1,14 +1,11 @@
 public class Estudiante {
     private int id; 
     private String nombre;
-    private int edad; 
-    private double promedio;
 
     //realizo el contructor
     public Estudiante(int id, String nombre, int edad, double promedio){
         this.id = id;
         this.nombre = nombre;
-        this.edad = edad;
         this.promedio = promedio;
     }
 
@@ -27,14 +24,6 @@ public class Estudiante {
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
-
-    public int getEdad(){
-        return edad;
-    }
-
-    public void setEdad(int edad){
-        this.edad = edad;
-    }
      
     public double getPromedio(){
         return promedio;
@@ -42,5 +31,9 @@ public class Estudiante {
 
     public void setPromedio(double promedio){
         this.promedio = promedio;
+    }
+
+    public void mostrarEstudiante(){
+        System.out.println("Id: " + getId() + "\n" + "Nombre: " + getNombre() + "\n" + "edad: " + getEdad() + "\n" + "Promedio: " + getPromedio());
     }
 }

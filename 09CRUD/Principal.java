@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        ArrayList<Estudiante> lista = new ArrayList<>();
-        int opcion = 0;
+        ArrayList<Estudiante> listaEstudiantes = new ArrayList<>();
+        int opcion;
 
         do {
             System.out.println("\n-- Bienvenido al registro de estudiantes");
@@ -31,21 +31,21 @@ public class Principal {
                     System.out.print("Ingresa Promedio: ");
                     double promedio = entrada.nextDouble();
 
-                    lista.add(new Estudiante(id, nom, edad, promedio))
+                    listaEstudiantes.add(new Estudiante(id, nom, edad, promedio));
                     System.out.println("Estudiante guardado"); 
                     break;
 
                 case 2:
                     //Editar la informacion del alumno
+                    System.out.print("Ingresa el Id del estudiante a modificar");
                     int idEdit = entrada.nextInt();
-                    for (Estudiante e : lista){
+                    for (Estudiante e : listaEstudiantes){
                         if (e.getId() == idEdit){
-                            entrada.nextLine();
-                            System.out.print("Nuevo nombre: ");
-                            e.setNombre(entrada.nextLine());
-                            System.out.print("Nueva edad: ");
-                            e.setEdad(entrada.nextInt());
-                            System.out.println("Datos actualizados con exito");
+                            System.out.print("Nuevo Nombre: ");
+                            e.setNombre(entrada.next());
+                            System.out.print("Nuevo promedio: ");
+                            e.setPromedio(entrada.nextDouble());
+                            System.out.println("Datos actualizados");
                         }
                     }
 
@@ -55,7 +55,7 @@ public class Principal {
                     //Eliminar a un alumno
                     System.out.print("Id del estudiante a eliminar: ");
                     int idElim = entrada.nextInt();
-                    lista.removeIf(est -> est.getId() == idElim);
+                    listaEstudiantes.removeIf(e -> e.getId() == idElim);
                     System.out.println("Si existia, ha sido eliminado eres libre");
 
                     break;
@@ -64,10 +64,10 @@ public class Principal {
                     //Buscar a un alumno
                     System.out.print("Id que se va a buscar: ");
                     int idBusq = entrada.nextInt();
-                    for (Estudiante e : lista){
+                    for (Estudiante e : listaEstudiantes){
                         if (e.getId() == idBusq){
                             System.out.println("Estudiante encontrado");
-                            e.MostrarEstudiante();
+                            e.mostrarEstudiante();
                         }
                     }
 
@@ -77,7 +77,7 @@ public class Principal {
                     //Mostrar la lista completa de todos los exclavos
                     System.out.println("-Lista de alumnos-");
                     for (Estudiante e : lista){
-                        e.MostrarEstudiante();
+                        e.mostrarEstudiante();
                         System.out.println("----------------");
                     }
 
