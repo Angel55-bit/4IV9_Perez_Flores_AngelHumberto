@@ -3,7 +3,7 @@ public class Estudiante extends Persona{
     private double promedio;
 
     public Estudiante(){
-        super()
+        super();
     }
 
     //realizo el contructor
