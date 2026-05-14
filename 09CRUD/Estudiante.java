@@ -1,8 +1,9 @@
-public class Estudiante {
+public class Estudiante extends Persona{
     private int id; 
     private double promedio;
 
     public Estudiante(){
+        super()
     }
 
     //realizo el contructor
