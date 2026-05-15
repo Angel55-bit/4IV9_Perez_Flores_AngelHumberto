@@ -26,7 +26,7 @@ public class Principal {
         ArrayList<Estudiantes> lista = mArch.leer("alumnos.dat");
         int op;
         do {
-            System.out.println("\n---Menu Principal---");
+            System.out.println("\n---Menu Estudiantes---");
             System.out.println("1.-Resgistrar");
             System.out.println("2.-Mostrar");
             System.out.println("3.-Editar");
@@ -65,10 +65,41 @@ public class Principal {
                             mArch.guardar(lista, "alumnos.dat");
                         }
                     }
-            
-                default:
                     break;
-            }
+
+                case 4:
+                    System.out.print("Id que se va a Eliminar: ");
+                    int idElim = sc.nextInt();
+                    lista.removeIf(e -> e.getId() == idElim);
+                    mArch.guardar(lista, "alumnos.dat");
+                    break;
+            } while (op != 5);
+        }
+
+        public void crudProfesores() {
+            ArrayList<Profesor> lista = mArch.leer("profesores.dat");
+            int op;
+            do{
+                System.out.println("\n---Menu Profesores ---");
+                System.out.println("1.-Resgistrar");
+                System.out.println("2.-Mostrar");
+                System.out.println("3.-Volver");
+                op = sc.nextInt();
+                if (op == 1) {
+                    System.out.println("Numero del Profesor: ");
+                    String num = sc.next();
+                    System.out.println("Nombre: ");
+                    String n = sc.next();
+                    System.out.println("Edad: ");
+                    int edad = sc.nextInt();
+                    System.out.println("Materia: ");
+                    String m = sc.next();
+                    lista.add(new Estudiante(n, edad, num, m));
+                    mArch.guardar(lista, "profesores.dat");
+                }else  if(op == 2){
+                    for(Profesor prof : lista) prof.mostrarProfesor();
+                }
+            }while (op != 3);
         }
     }
 }
