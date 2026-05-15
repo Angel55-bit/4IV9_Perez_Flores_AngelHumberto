@@ -2,10 +2,6 @@ public class Estudiante extends Persona {
     private int id;
     private double promedio;
 
-    public Estudiante(){
-
-    }
-
     public Estudiante(String nombre, int edad, int id, double promedio){
         super(nombre, edad);
         this.id = id;
@@ -22,6 +18,10 @@ public class Estudiante extends Persona {
     
     public double getPromedio() {
         return promedio;
+    }
+
+    public void setPromedio(double Promedio) {
+        this.promedio = promedio;
     }
 
     public void mostrarEstudiante() {

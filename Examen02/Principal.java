@@ -23,7 +23,7 @@ public class Principal {
     }
 
     public void crudEstudiantes(){
-        ArrayList<Estudiantes> lista = mArch.leer("alumnos.dat");
+        ArrayList<Estudiante> lista = mArch.leer("alumnos.dat");
         int op;
         do {
             System.out.println("\n---Menu Estudiantes---");
@@ -73,6 +73,7 @@ public class Principal {
                     lista.removeIf(e -> e.getId() == idElim);
                     mArch.guardar(lista, "alumnos.dat");
                     break;
+                }
             } while (op != 5);
         }
 
@@ -94,12 +95,11 @@ public class Principal {
                     int edad = sc.nextInt();
                     System.out.println("Materia: ");
                     String m = sc.next();
-                    lista.add(new Estudiante(n, edad, num, m));
+                    lista.add(new Profesor(n, edad, num, m));
                     mArch.guardar(lista, "profesores.dat");
                 }else  if(op == 2){
                     for(Profesor prof : lista) prof.mostrarProfesor();
                 }
-            }while (op != 3);
-        }
+        }while (op != 3); 
     }
 }

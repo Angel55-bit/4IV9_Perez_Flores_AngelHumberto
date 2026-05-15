@@ -1,10 +1,6 @@
-public class Profesor {
+public class Profesor extends Persona {
     private String numProfesor;
     private String materia;
-
-    public Profesor() {
-
-    }
 
     public Profesor(String nombre, int edad, String numProfesor, String materia) {
         super(nombre, edad);
@@ -17,7 +13,7 @@ public class Profesor {
     }
 
     public void setnumProfesor(String numProfesor) {
-        this.numProfesor;
+        this.numProfesor = numProfesor;
     }
 
     public String getmateria() {
@@ -30,6 +26,6 @@ public class Profesor {
 
     public void mostrarProfesor() {
         System.out.println("Numero de Profesor: " + numProfesor + "Nombre: " + getNombre() + "Edad: " + getEdad() + "Materia: " + materia);
-        
+
     }
 }
