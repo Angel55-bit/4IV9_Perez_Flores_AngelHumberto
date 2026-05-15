@@ -49,7 +49,22 @@ public class Principal {
                     break;
 
                 case 2:
-                    
+                    for(Estudiante e : lista) e.mostrarEstudiante();
+
+                    break;
+
+                case 3:
+                    System.out.print("Id que se va a editar: ");
+                    int idEdit = sc.nextInt();
+                    for(Estudiante e : lista){
+                        if(e.getId() == idEdit){
+                            System.out.print("Nuevo Nombre: ");
+                            e.setNombre(sc.next());
+                            System.out.print("Nuevo Promedio: ");
+                            e.setPromedio(sc.nextDouble());
+                            mArch.guardar(lista, "alumnos.dat");
+                        }
+                    }
             
                 default:
                     break;
