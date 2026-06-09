@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConexionBD {
 
     private static final String URL =
-            "jdbc:mysql://localhost:3306/AngelDB_FutbolAmerica?serverTimezone=America/Mexico_City";
+            "jdbc:mysql://localhost:3306/AngelDB_FutbolAmericano?serverTimezone=America/Mexico_City";
 
     private static final String USUARIO = "root";
     private static final String PASSWORD = "";

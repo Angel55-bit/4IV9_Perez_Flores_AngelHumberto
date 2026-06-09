@@ -1,5 +1,5 @@
-CREATE DATABASE FutbolAmericano;
-USE FutbolAmericano;
+CREATE DATABASE AngelDB_FutbolAmerica;
+USE AngelDB_FutbolAmerica;
 
 CREATE TABLE equipos(
     id_equipo INT PRIMARY KEY AUTO_INCREMENT,
